@@ -1,49 +1,38 @@
-<html>
-    <head>
+<html lang="pl">
+<head>
+    <meta title="Fizz Buzz">
     <script type="text/javascript">
         var a = parseInt(prompt("Podaj pierwsza liczbe"));
         var b = parseInt(prompt("Podaj druga liczbe"));
-        
-        if (a < b)
-            {
-                for (var i = a; i<=b;i++)
-                    {
-                        document.write(change(i)+", ");
-                    }
+
+        if (a < b) {
+            for (var i = a; i <= b; i++) {
+                document.write(change(i) + ", ");
             }
-        else
-            {
-                for (var i = a; i>=b;i--)
-                    {
-                        document.write(change(i)+", ");
-                    }
+        } else {
+            for (var i = a; i >= b; i--) {
+                document.write(change(i) + ", ");
             }
-        
-        function change(l)
-        {
-            if (l%3 == 0 && l%5 == 0)
-                {
-                var wynik = "FIZZ BUZZ";
-                return wynik;
-                }
-            if(l%3 == 0)
-                {
-                var wynik = "FIZZ"
-                return wynik;
-                }
-            if(l%5 == 0)
-                {
-                var wynik = "BUZZ"
-                return wynik;
-                }
-            else
-                return l;
-            
         }
-    
-        </script>
-    </head>
-    <body>
-    
-    </body>
+
+        function change(l) {
+            if (l % 3 == 0 && l % 5 == 0) {
+                return wynik = "FIZZ BUZZ";
+            }
+            if (l % 3 == 0) {
+                return wynik = "FIZZ";
+            }
+            if (l % 5 == 0) {
+                return wynik = "BUZZ";
+            } else {
+                return l;
+            }
+
+        }
+
+    </script>
+</head>
+<body>
+
+</body>
 </html>
